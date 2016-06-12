@@ -171,6 +171,11 @@
     <Compile Include="DataObjects\Trip.cs" />
     <Compile Include="DataObjects\Vehicle.cs" />
     <Compile Include="DataObjects\Zone.cs" />
+    <Compile Include="Migrations\201606121805027_Initial-Create.cs" />
+    <Compile Include="Migrations\201606121805027_Initial-Create.Designer.cs">
+      <DependentUpon>201606121805027_Initial-Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Map\ActivityMap.cs" />
     <Compile Include="Models\Map\AddressMap.cs" />
     <Compile Include="Models\Map\BaseUserMap.cs" />
@@ -201,6 +206,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\vanns-mobile - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606121805027_Initial-Create.resx">
+      <DependentUpon>201606121805027_Initial-Create.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
