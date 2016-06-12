@@ -23,7 +23,7 @@ namespace vanns_mobileService.Models
         {
         }
 
-        //public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<TodoItem> TodoItems { get; set; }
         public DbSet<ActivityVan> Activities { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<BaseUser> BaseUsers { get; set; }
@@ -57,7 +57,6 @@ namespace vanns_mobileService.Models
             modelBuilder.Configurations.Add(new ZoneMap());
             modelBuilder.Configurations.Add(new LevelMap());
         }
-
     }
 
 }

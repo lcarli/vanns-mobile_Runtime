@@ -165,6 +165,7 @@
     <Compile Include="Controllers\SchoolController.cs" />
     <Compile Include="Controllers\SchoolDriverController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\TripController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="Controllers\ZoneController.cs" />
