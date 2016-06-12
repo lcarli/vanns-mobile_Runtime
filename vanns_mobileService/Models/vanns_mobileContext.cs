@@ -55,7 +55,10 @@ namespace vanns_mobileService.Models
             modelBuilder.Configurations.Add(new TripMap());
             modelBuilder.Configurations.Add(new VehicleMap());
             modelBuilder.Configurations.Add(new ZoneMap());
+            modelBuilder.Configurations.Add(new LevelMap());
         }
+
+        public System.Data.Entity.DbSet<vanns_mobileService.DataObjects.ActivityVan> ActivityVans { get; set; }
     }
 
 }

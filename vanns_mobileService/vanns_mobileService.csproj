@@ -90,6 +90,7 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Web.Http">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
@@ -155,8 +156,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
+    <Compile Include="Controllers\ActivityVanController.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\EstimateController.cs" />
+    <Compile Include="Controllers\LevelController.cs" />
+    <Compile Include="Controllers\RatingController.cs" />
     <Compile Include="Controllers\SchoolController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\SchoolDriverController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TripController.cs" />
+    <Compile Include="Controllers\VehicleController.cs" />
+    <Compile Include="Controllers\ZoneController.cs" />
     <Compile Include="DataObjects\Activity.cs" />
     <Compile Include="DataObjects\Address.cs" />
     <Compile Include="DataObjects\BaseUser.cs" />
@@ -181,6 +192,7 @@
     <Compile Include="Models\Map\BaseUserMap.cs" />
     <Compile Include="Models\Map\ClientMap.cs" />
     <Compile Include="Models\Map\EstimateMap.cs" />
+    <Compile Include="Models\Map\LevelMap.cs" />
     <Compile Include="Models\Map\RatingMap.cs" />
     <Compile Include="Models\Map\SchoolDriverMap.cs" />
     <Compile Include="Models\Map\SchoolMap.cs" />
